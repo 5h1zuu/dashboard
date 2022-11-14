@@ -70,7 +70,8 @@
     width: 150px;
     border-radius: 15px;
     border: 2px solid;
-    background-color: aqua;
+    background-color: rgb(3, 159, 231);
+    color: white;
 }
 
 
@@ -78,7 +79,7 @@
     grid-row: 1/5;
     display: grid;
     grid-template-rows: 100px 1fr 1fr;
-    background-color: rgb(5, 159, 197);
+    background-color: rgb(3, 159, 231);
     padding: 15px;
     color: white;
     font-weight: bold;
@@ -116,7 +117,7 @@
     grid-row: 2/6;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 50px repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     padding: 35px;
     
@@ -130,12 +131,13 @@
 
 .card{
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     background-color: white;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    border-left: 10px solid rgb(255, 208, 0);
 }
 
 .heading{
@@ -157,20 +159,16 @@
     grid-column: 4;
     grid-row: 2/6;
     display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: 50px repeat(auto-fit, minmax(200, 1fr));
     padding: 35px;
-    
+    gap: 15px;
 }
 
 .above{
-    display: grid;
-    padding: 5px;
+    padding: 15px;
     background-color: white;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-    width: 1fr;
-    height: 1fr; 
     border-radius: 15px;
-    padding: 15px;
    
 }
 
@@ -179,11 +177,13 @@
     font-size: 15px;
 }
 
+.card2 > :not(.heading2){
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
 .below{
-    display: grid;
     padding: 5px;
-    width: 1fr;
-    height: 1fr;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);

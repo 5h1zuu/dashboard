@@ -99,6 +99,15 @@
     margin-left: 50px;
 }
 
+.options, .help{
+    list-style-type: none;
+}
+
+.side-icon{
+    height: 35px;
+    width: 35px;
+}
+
 .main-content{
     grid-column: 2/4;
     grid-row: 2/6;

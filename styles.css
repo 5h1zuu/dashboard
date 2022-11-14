@@ -20,18 +20,55 @@
 
 .top{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 100px 100px 250px;
     justify-items: center;
     align-items: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
+.search{
+    width: 85%;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 30px;
+    background-image: url(images/magnify.png);
+    background-repeat: no-repeat;
+    background-position: 1px;
+}
+
+.pfp{
+    height: 50px;
+    width: 50px;
+}
 
 .bottom{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: 150px repeat(4,1fr);
     justify-items: center;
     align-items: center;
 }
+
+.bottom > .pfp{
+    height: 100px;
+    width: 100px;
+    margin-left: 55px;
+}
+
+.message{
+    width: 350px;
+    height: auto;
+}
+
+
+.action{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: 2px solid;
+    background-color: aqua;
+}
+
 
 .sidebar{
 
@@ -41,6 +78,8 @@
     background-color: rgb(5, 159, 197);
     padding: 15px;
     color: white;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .options{
@@ -49,7 +88,10 @@
     margin-left: 50px;
 }
 
-
+.dashboard{
+    font-size: 45px;
+    margin-left: 45px;
+}
 
 .help{
     display: grid;

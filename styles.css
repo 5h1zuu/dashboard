@@ -201,3 +201,17 @@
 .main-content, .right-side{
     background-color: rgb(241, 245, 245);
 }
+
+
+.icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 35px;
+}
+
+.card3{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 5px;
+
+}
